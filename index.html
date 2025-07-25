@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Partes del extintor</title>
+  </head>
+  <body>
+    <h1 class="lato-bold">Identificación de partes del extintor</h1>
+    <p class="lato-regular">Gira el extintor para identificar el nombre de todas sus partes. Si estás desde tu celular, también puedes activar la Realidad Aumentada y verlo como si estuviera frente a ti.</p>
+    <model-viewer
+      alt="Extintor"
+      src="./extintor.glb"
+      ar      
+      poster="./extintor.webp"
+      shadow-intensity="1"
+      camera-controls
+      touch-action="pan-y"
+      >
+      <button
+        slot="ar-button"
+        style="
+          background-color: white;
+          border-radius: 4px;
+          border: none;
+          position: absolute;
+          top: 16px;
+          right: 16px;
+        "
+      >
+        📷 Activar AR
+      </button>
+
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-visor"
+        data-position="-1.4 2.75 0"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Manguera</div>
+      </button>
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-boquilla"
+        data-position="-1.2 0.8 0"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Boquilla</div>
+      </button>
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-manilla"
+        data-position="0.5 5.5 0"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Palanca activadora</div>
+      </button>
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-manometro"
+        data-position="0.1 4.9 0.3"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Manómetro</div>
+      </button>
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-cilindro"
+        data-position="0.6 2 0"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Cilindro</div>
+      </button>
+      <button
+        class="hotspot lato-regular"
+        slot="hotspot-pasador"
+        data-position="0 5.2 -0.3"
+        data-normal="0 0 1"
+      >
+        <div class="annotation">Pasador de seguridad</div>
+      </button>
+    ></model-viewer>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
