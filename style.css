@@ -16,6 +16,9 @@ h1 {
     color: #4f0b7b;
     text-align: center;
 }
+ p {
+    text-align: center;
+ }
 
 .lato-regular {
   font-family: "Lato", sans-serif;
