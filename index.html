@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +14,22 @@
   </head>
   <body>
     <h1 class="lato-bold">Identificación de partes del extintor</h1>
-    <p class="lato-regular">Gira el extintor para identificar el nombre de todas sus partes. Si estás desde tu celular, también puedes activar la Realidad Aumentada y verlo como si estuviera frente a ti.</p>
+    <p class="lato-regular">
+      Gira el extintor para identificar el nombre de todas sus partes. Si estás
+      desde tu celular, también puedes activar la Realidad Aumentada y verlo
+      como si estuviera frente a ti.
+    </p>
+
     <model-viewer
-      alt="Extintor"
+      alt="Modelo 3D interactivo de un extintor con sus partes identificadas"
       src="./extintor.glb"
-      ar      
+      ar
+      ar-modes="scene-viewer quick-look webxr"
       poster="./extintor.webp"
       shadow-intensity="1"
       camera-controls
       touch-action="pan-y"
-      >
+    >
       <button
         slot="ar-button"
         style="
@@ -46,6 +52,7 @@
       >
         <div class="annotation">Manguera</div>
       </button>
+
       <button
         class="hotspot lato-regular"
         slot="hotspot-boquilla"
@@ -54,6 +61,7 @@
       >
         <div class="annotation">Boquilla</div>
       </button>
+
       <button
         class="hotspot lato-regular"
         slot="hotspot-manilla"
@@ -62,6 +70,7 @@
       >
         <div class="annotation">Palanca activadora</div>
       </button>
+
       <button
         class="hotspot lato-regular"
         slot="hotspot-manometro"
@@ -70,6 +79,7 @@
       >
         <div class="annotation">Manómetro</div>
       </button>
+
       <button
         class="hotspot lato-regular"
         slot="hotspot-cilindro"
@@ -78,6 +88,7 @@
       >
         <div class="annotation">Cilindro</div>
       </button>
+
       <button
         class="hotspot lato-regular"
         slot="hotspot-pasador"
@@ -86,7 +97,7 @@
       >
         <div class="annotation">Pasador de seguridad</div>
       </button>
-    ></model-viewer>
+    </model-viewer>
 
     <script
       type="module"
