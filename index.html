@@ -23,7 +23,9 @@
     <model-viewer
       alt="Modelo 3D interactivo de un extintor con sus partes identificadas"
       src="./extintor.glb"
-      ar            
+      ios-src="./extintor.usdz"
+      ar
+      ar-modes="scene-viewer quick-look webxr"
       poster="./extintor.webp"
       shadow-intensity="1"
       camera-controls
@@ -32,7 +34,7 @@
       <button
         slot="ar-button"
         style="
-          background-color: white;
+          background-color: rgba(255, 255, 255, 0.445);
           border-radius: 4px;
           border: none;
           position: absolute;
